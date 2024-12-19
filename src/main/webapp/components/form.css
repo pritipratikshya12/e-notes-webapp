@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0A0A0A; /* Matte black */
+    color: #D0D0D0; /* Light gray text */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 2px solid #00FF84; /* Neon green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container h2 {
+    text-align: center;
+    color: #00FF84;
+     /* Neon green */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #D0D0D0; /* Light gray for labels */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #00FF84; /* Neon green border */
+    background-color: #1A1A1A; /* Dark gray background */
+    color: #D0D0D0; /* Light gray text */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #FF007F; /* Hot pink on focus */
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #0A0A0A; /* Matte black text */
+    background-color: #00FF84; /* Neon green button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF007F; /* Hot pink on hover */
+}
